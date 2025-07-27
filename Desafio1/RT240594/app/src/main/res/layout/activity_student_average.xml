@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".StudentAverageActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promedio del Estudiante"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/studentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del Estudiante"
+        android:inputType="textPersonName|textCapWords"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/nota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:hint="Nota 1 (0-10"
+        android:inputType="numberDecimal"
+        android:maxLength="4" />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2 (0-10)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/nota3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 3 (0-10)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/nota4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 4 (0-10)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:maxLength="4"/>
+
+    <EditText
+        android:id="@+id/nota5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nota 5 (0-10)"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:maxLength="4"/>
+
+    <Button
+        android:id="@+id/calculateAverage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calcular Promedio"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+</LinearLayout>
